@@ -1,0 +1,20 @@
+{
+  "plant": {
+    "name": "Basil Plant",
+    "temperature": 20,
+    "humidity": 30,
+    "waterLevel": 30,
+    "light": 20,
+    "moisture": 20,
+    "image": "plant.jpg",
+    "trendData": [
+      { "time": "10:00", "temperature": 22, "humidity": 45, "light": 60, "moisture": 30, "waterLevel": 20 },
+      { "time": "11:00", "temperature": 23, "humidity": 50, "light": 70, "moisture": 28, "waterLevel": 20 },
+      { "time": "12:00", "temperature": 24, "humidity": 55, "light": 75, "moisture": 25, "waterLevel": 50 },
+
+
+      { "time": "13:00", "temperature": 25, "humidity": 60, "light": 80, "moisture": 18, "waterLevel": 22 },
+      { "time": "14:00", "temperature": 26, "humidity": 65, "light": 85, "moisture": 15, "waterLevel": 19 }
+    ]
+  }
+}

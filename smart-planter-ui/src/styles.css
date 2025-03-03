@@ -1,0 +1,174 @@
+/* General Layout */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Screen Layout */
+.home-screen, .details-screen, .settings-screen {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    padding: 40px; /* Adjusted padding to ensure proper spacing */
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Fix Plant Details Screen Double Margin */
+.details-screen {
+    margin: 0 auto; /* Remove any unnecessary margins */
+    padding: 30px; /* Adjust padding for better layout */
+    text-align: center;
+}
+
+/* Fix Graph Layout and Prevent Overlapping */
+.chart-container {
+    margin-top: 15px; /* Reduce margin between elements */
+    padding: 15px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Prevents content shifting */
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Fix Graph Moving on Hover */
+.recharts-wrapper {
+    margin-top: 15px;
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+    transition: none; /* Remove transform animation */
+}
+
+/* Prevent Chart Hover Effect from Moving */
+.recharts-wrapper:hover {
+    transform: none !important; /* Remove scaling to prevent UI movement */
+}
+
+/* Plant Image */
+.plant-image {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.plant-image:hover {
+    transform: scale(1.05);
+}
+
+/* Data Display */
+.data {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.data-item {
+    display: flex;
+    justify-content: space-between;
+    background: #e8f5e9;
+    padding: 14px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.data-item:hover {
+    background: #d4efdf;
+    transform: scale(1.02);
+}
+
+/* Alerts */
+/* Alerts - Ensure Visibility */
+.alerts {
+    margin-top: 20px;
+    color: red;
+    font-size: 16px;
+    font-weight: bold;
+    background: #ffebee; /* Light red background for better visibility */
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid red;
+    display: block; /* Ensure it’s displayed */
+    text-align: center;
+    width: 80%; /* Keeps alert size manageable */
+    margin-left: auto;
+    margin-right: auto;
+    animation: shake 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+/* Buttons */
+.button, .back-button {
+    display: inline-block;
+    background: #27ae60;
+    color: white;
+    font-size: 18px;
+    padding: 14px 22px;
+    margin: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: transform 0.2s ease, background 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover, .back-button:hover {
+    background: #1e8449;
+    transform: scale(1.05);
+}
+
+.button:active, .back-button:active {
+    transform: scale(0.95);
+}
+
+/* Enhanced Chart Labels */
+.recharts-label {
+    font-size: 14px;
+    font-weight: bold;
+    fill: #333;
+}
+
+/* Reference Dots for Watering Events */
+.reference-dot {
+    fill: blue;
+    stroke: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Fix Overlapping in Settings Screen */
+.settings-item {
+    background: #f9f9f9;
+    padding: 14px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    transition: all 0.3s ease-in-out;
+}
+
+.settings-item:hover {
+    background: #eef7f9;
+}
