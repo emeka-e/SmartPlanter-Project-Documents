@@ -1,0 +1,3959 @@
+[
+    {
+        "id": "ab977d77e32982dd",
+        "type": "tab",
+        "label": "Main",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "c34fcf6801391620",
+        "type": "tab",
+        "label": "Read and Clear Table",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "562f935fc93b601d",
+        "type": "tab",
+        "label": "SQLite Table Create Flow (with image_file)",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "513bf3097d98fcd6",
+        "type": "tab",
+        "label": "Drop SQLite Table",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "b5bf93cb79fb6483",
+        "type": "tab",
+        "label": "Load CSV to SQLite (Chained)",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "c640fc672af41d49",
+        "type": "tab",
+        "label": "Settings",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "1979560e0685423f",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "127.0.0.1",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "3cc678becf445218",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#12914f",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#12914f",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#12914f",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1ad574",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#12914f",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Smart Planter",
+            "hideToolbar": "false",
+            "allowSwipe": "menu",
+            "lockMenu": "icon",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "7985d7616ba4221a",
+        "type": "ui-base",
+        "name": "My Dashboard",
+        "path": "/dashboard",
+        "appIcon": "",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control",
+            "ui-file-input",
+            "ui-text-input"
+        ],
+        "showPathInSidebar": false,
+        "headerContent": "page",
+        "navigationStyle": "default",
+        "titleBarStyle": "default",
+        "showReconnectNotification": true,
+        "notificationDisplayTime": 1,
+        "showDisconnectNotification": true
+    },
+    {
+        "id": "b9221115fdaa88ca",
+        "type": "ui-theme",
+        "name": "Default Theme",
+        "colors": {
+            "surface": "#ffffff",
+            "primary": "#0094ce",
+            "bgPage": "#ffffff",
+            "groupBg": "#ffffff",
+            "groupOutline": "#cccccc"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "12px",
+            "groupGap": "8px",
+            "groupBorderRadius": "12px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "6e6d06a488895ccb",
+        "type": "ui-page",
+        "name": "Home",
+        "ui": "7985d7616ba4221a",
+        "path": "/page2",
+        "icon": "home",
+        "layout": "notebook",
+        "theme": "b9221115fdaa88ca",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "200",
+                "cols": "1"
+            }
+        ],
+        "order": 1,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "0167e04414bca36b",
+        "type": "ui-group",
+        "name": "Group 2",
+        "page": "6e6d06a488895ccb",
+        "width": "1",
+        "height": 1,
+        "order": 5,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "b96e23c0bcb72a62",
+        "type": "ui-group",
+        "name": "Group 7",
+        "page": "6e6d06a488895ccb",
+        "width": "1",
+        "height": 1,
+        "order": 4,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "d09071f23f0191a8",
+        "type": "ui-group",
+        "name": "Group 11",
+        "page": "6e6d06a488895ccb",
+        "width": "1",
+        "height": 1,
+        "order": 6,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "8438fab877cbb2a6",
+        "type": "ui-group",
+        "name": "Group 12",
+        "page": "6e6d06a488895ccb",
+        "width": "1",
+        "height": 1,
+        "order": 3,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "cb261ebf584deb7a",
+        "type": "ui-group",
+        "name": "Group 13",
+        "page": "6e6d06a488895ccb",
+        "width": "1",
+        "height": 1,
+        "order": 1,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "d1c773e9feb68264",
+        "type": "ui-group",
+        "name": "Group 9",
+        "page": "6e6d06a488895ccb",
+        "width": "1",
+        "height": 1,
+        "order": 2,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "47f5166bf1fd51e7",
+        "type": "sqlitedb",
+        "db": "/home/pi/plants.db",
+        "mode": "RWC"
+    },
+    {
+        "id": "83edf8a114e1c8db",
+        "type": "sqlitedb",
+        "db": "/home/pi/plants.db",
+        "mode": "RWC"
+    },
+    {
+        "id": "20d3e99e7e579814",
+        "type": "sqlitedb",
+        "db": "/home/pi/plants.db",
+        "mode": "RWC"
+    },
+    {
+        "id": "5f6578962f9afc3c",
+        "type": "sqlitedb",
+        "db": "/home/pi/plants.db",
+        "mode": "RWC"
+    },
+    {
+        "id": "228416cd.4bc082",
+        "type": "sqlitedb",
+        "db": "/home/pi/plants.db",
+        "mode": "RWC"
+    },
+    {
+        "id": "c7b0f140a8eba518",
+        "type": "ui-theme",
+        "name": "Theme 2",
+        "colors": {
+            "surface": "#ffffff",
+            "primary": "#358856",
+            "bgPage": "#ffffff",
+            "groupBg": "#ffffff",
+            "groupOutline": "#cccccc"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "sqlite_db",
+        "type": "sqlitedb",
+        "db": "/home/pi/plants.db"
+    },
+    {
+        "id": "8c2e54c9de9fa817",
+        "type": "ui-page",
+        "name": "Trend",
+        "ui": "7985d7616ba4221a",
+        "path": "/page1",
+        "icon": "chart-line",
+        "layout": "notebook",
+        "theme": "c7b0f140a8eba518",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "",
+                "px": "300",
+                "cols": "1"
+            }
+        ],
+        "order": 2,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "f208cf04a85449a2",
+        "type": "ui-group",
+        "name": "Group 1",
+        "page": "8c2e54c9de9fa817",
+        "width": "1",
+        "height": 1,
+        "order": 1,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "2ff860ecf94d7291",
+        "type": "ui-page",
+        "name": "Settings",
+        "ui": "7985d7616ba4221a",
+        "path": "/page3",
+        "icon": "cog",
+        "layout": "grid",
+        "theme": "c7b0f140a8eba518",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 3,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "6e23d1d9b0d47c85",
+        "type": "ui-group",
+        "name": "Group 8",
+        "page": "2ff860ecf94d7291",
+        "width": "6",
+        "height": 1,
+        "order": 1,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "e5c4971755ab6948",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "localhost",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "b4df95e9fae40f5f",
+        "type": "mqtt in",
+        "z": "ab977d77e32982dd",
+        "name": "Planter Sensors",
+        "topic": "planter01/sensors",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "1979560e0685423f",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 160,
+        "wires": [
+            [
+                "44ea6cc6ea9be9b1",
+                "6d6b134b49038741"
+            ]
+        ]
+    },
+    {
+        "id": "44ea6cc6ea9be9b1",
+        "type": "json",
+        "z": "ab977d77e32982dd",
+        "name": "Parse JSON",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 300,
+        "y": 160,
+        "wires": [
+            [
+                "d4637eb56b23c154",
+                "a9c126cc862a89bf"
+            ]
+        ]
+    },
+    {
+        "id": "f24186804bc5999e",
+        "type": "mqtt in",
+        "z": "ab977d77e32982dd",
+        "name": "Planter Alarms",
+        "topic": "planter01/alarm",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "1979560e0685423f",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 100,
+        "y": 460,
+        "wires": [
+            [
+                "c1958e90c915f8bd",
+                "83efec07bc855af3",
+                "75744789720ef9ff"
+            ]
+        ]
+    },
+    {
+        "id": "c1958e90c915f8bd",
+        "type": "function",
+        "z": "ab977d77e32982dd",
+        "name": "Pump Status → Chart",
+        "func": "const INTERVAL_MS = 10 * 60 * 1000; // 10 minutes\nconst OFF_DELAY_MS = 2000;          // 2 seconds after second 100\n\n// Initialize state once\nif (!context.get(\"initialized\")) {\n    context.set(\"initialized\", true);\n    context.set(\"pumpState\", 0);\n\n    // Start the 10-minute interval sender\n    const intervalId = setInterval(() => {\n        const state = context.get(\"pumpState\") || 0;\n        node.send({ topic: \"Watering\", payload: state });\n    }, INTERVAL_MS);\n\n    context.set(\"intervalId\", intervalId);\n}\n\n// Handle \"pump activated\" input\nif (typeof msg.payload === \"string\" && msg.payload.toLowerCase().includes(\"pump activated\")) {\n    // Set state to ON\n    context.set(\"pumpState\", 100);\n    node.send({ topic: \"Watering\", payload: 100 });\n\n    // Schedule 2nd ON after 10 minutes\n    setTimeout(() => {\n        node.send({ topic: \"Watering\", payload: 100 });\n\n        // Schedule OFF 2 seconds later\n        setTimeout(() => {\n            context.set(\"pumpState\", 0);\n            node.send({ topic: \"Watering\", payload: 0 });\n        }, OFF_DELAY_MS);\n    }, INTERVAL_MS);\n}\n\nreturn;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 820,
+        "y": 460,
+        "wires": [
+            [
+                "04962f5893da8b8b",
+                "245350232ab06e5d"
+            ]
+        ]
+    },
+    {
+        "id": "ab137ad850b705e6",
+        "type": "aedes broker",
+        "z": "ab977d77e32982dd",
+        "name": "Broker",
+        "mqtt_port": 1883,
+        "mqtt_ws_bind": "port",
+        "mqtt_ws_port": "",
+        "mqtt_ws_path": "",
+        "cert": "",
+        "key": "",
+        "certname": "",
+        "keyname": "",
+        "persistence_bind": "memory",
+        "dburl": "",
+        "usetls": false,
+        "x": 1730,
+        "y": 20,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "04962f5893da8b8b",
+        "type": "debug",
+        "z": "ab977d77e32982dd",
+        "name": "debug 7",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1160,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "f37b1ec00e6a7c14",
+        "type": "debug",
+        "z": "ab977d77e32982dd",
+        "name": "debug 8",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1140,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "6d6b134b49038741",
+        "type": "debug",
+        "z": "ab977d77e32982dd",
+        "name": "debug 1",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 300,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "83efec07bc855af3",
+        "type": "debug",
+        "z": "ab977d77e32982dd",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 360,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "245350232ab06e5d",
+        "type": "ui-chart",
+        "z": "ab977d77e32982dd",
+        "group": "f208cf04a85449a2",
+        "name": "",
+        "label": "Plant  Data",
+        "order": 1,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisLabel": "",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "timestamp",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "",
+        "yAxisProperty": "payload",
+        "yAxisPropertyType": "msg",
+        "ymin": "0",
+        "ymax": "100",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "line",
+        "pointRadius": "1",
+        "showLegend": false,
+        "removeOlder": "1",
+        "removeOlderUnit": "604800",
+        "removeOlderPoints": "",
+        "colors": [
+            "#ffa500",
+            "#1e90ff",
+            "#c5b0d5",
+            "#2ca02c",
+            "#a347e1",
+            "#a51fff",
+            "#ff9896",
+            "#9467bd",
+            "#cad7b2"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": "1",
+        "height": "4",
+        "className": "",
+        "interpolation": "bezier",
+        "x": 1570,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d4637eb56b23c154",
+        "type": "function",
+        "z": "ab977d77e32982dd",
+        "name": "Split Sensors-Plant",
+        "func": "// We expect msg.payload to be an object like:\n// {\n//   \"soil_moisture\": 17,\n//   \"temperature\": 28,\n//   \"humidity\": 47,\n//   \"light_level\": 70,\n//   \"water_level\": 50\n// }\n\nlet data = msg.payload;\n\n// Double-check we have a proper object\nif (typeof data !== 'object' || data === null) {\n    return null;\n}\n\nlet msgArray = [];\n\n// // Temperature\n// if (data.hasOwnProperty('temperature')) {\n//     msgArray.push({\n//         topic: 'Temperature °C ',\n//         payload: data.temperature\n//     });\n// }\n// // Humidity\n// if (data.hasOwnProperty('humidity')) {\n//     msgArray.push({\n//         topic: 'Humidity %',\n//         payload: data.humidity\n//     });\n// }\n// // Light Level\n// if (data.hasOwnProperty('light_level')) {\n//     msgArray.push({\n//         topic: 'Light Level %',\n//         payload: data.light_level\n//     });\n// }\n// Soil Moisture\nif (data.hasOwnProperty('soil_moisture')) {\n    msgArray.push({\n        topic: 'Soil Moisture %',\n        payload: data.soil_moisture\n    });\n}\n// Water Level\nif (data.hasOwnProperty('water_level')) {\n    msgArray.push({\n        topic: 'Water Level %',\n        payload: data.water_level\n    });\n}\n\n// Return array of messages for a single-output function node\nreturn [msgArray];",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 810,
+        "y": 160,
+        "wires": [
+            [
+                "f37b1ec00e6a7c14",
+                "b7856fb8648ead45",
+                "bd09b99a96106e6e"
+            ]
+        ]
+    },
+    {
+        "id": "a9c126cc862a89bf",
+        "type": "function",
+        "z": "ab977d77e32982dd",
+        "name": "Split Sensors-Ambient",
+        "func": "// We expect msg.payload to be an object like:\n// {\n//   \"soil_moisture\": 17,\n//   \"temperature\": 28,\n//   \"humidity\": 47,\n//   \"light_level\": 70,\n//   \"water_level\": 50\n// }\n\nlet data = msg.payload;\n\n// Double-check we have a proper object\nif (typeof data !== 'object' || data === null) {\n    return null;\n}\n\nlet msgArray = [];\n\n// Temperature\nif (data.hasOwnProperty('temperature')) {\n    msgArray.push({\n        topic: 'Temperature °C',\n        payload: data.temperature\n    });\n}\n// Humidity\nif (data.hasOwnProperty('humidity')) {\n    msgArray.push({\n        topic: 'Humidity %',\n        payload: data.humidity\n    });\n}\n// Light Level\nif (data.hasOwnProperty('light_level')) {\n    msgArray.push({\n        topic: 'Light Level %',\n        payload: data.light_level\n    });\n}\n// // Soil Moisture\n// if (data.hasOwnProperty('soil_moisture')) {\n//     msgArray.push({\n//         topic: 'Soil Moisture %',\n//         payload: data.soil_moisture\n//     });\n// }\n// // Water Level\n// if (data.hasOwnProperty('water_level')) {\n//     msgArray.push({\n//         topic: 'Water Level %',\n//         payload: data.water_level\n//     });\n// }\n\n// Return array of messages for a single-output function node\nreturn [msgArray];",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 820,
+        "y": 260,
+        "wires": [
+            [
+                "f21226b1638464a8",
+                "b7856fb8648ead45",
+                "2a4e397bf66bfe16"
+            ]
+        ]
+    },
+    {
+        "id": "13c55fb6ae3bf311",
+        "type": "ui-chart",
+        "z": "ab977d77e32982dd",
+        "group": "f208cf04a85449a2",
+        "name": "",
+        "label": "Ambient  Data",
+        "order": 2,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisLabel": "",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "timestamp",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "",
+        "yAxisProperty": "payload",
+        "yAxisPropertyType": "msg",
+        "ymin": "0",
+        "ymax": "100",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "line",
+        "pointRadius": "1",
+        "showLegend": false,
+        "removeOlder": "1",
+        "removeOlderUnit": "604800",
+        "removeOlderPoints": "",
+        "colors": [
+            "#808000",
+            "#ff0000",
+            "#ffd700",
+            "#2ca02c",
+            "#a347e1",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": "1",
+        "height": "4",
+        "className": "",
+        "interpolation": "bezier",
+        "x": 1580,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f21226b1638464a8",
+        "type": "debug",
+        "z": "ab977d77e32982dd",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 820,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "b7856fb8648ead45",
+        "type": "switch",
+        "z": "ab977d77e32982dd",
+        "name": "",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Temperature °C",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Humidity %",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Light Level %",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Soil Moisture %",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Water Level %",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 5,
+        "x": 1310,
+        "y": 400,
+        "wires": [
+            [
+                "2c17168419e97b0d",
+                "6b60f3e08604f19e"
+            ],
+            [
+                "94b70a19cc3d5bc9"
+            ],
+            [
+                "63a5a16c6c194c24",
+                "4b69230466ae40d9"
+            ],
+            [
+                "c4b30df3a4371f3b"
+            ],
+            [
+                "b670b3ed9c477345"
+            ]
+        ]
+    },
+    {
+        "id": "2c17168419e97b0d",
+        "type": "debug",
+        "z": "ab977d77e32982dd",
+        "name": "debug 4",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1560,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "6b60f3e08604f19e",
+        "type": "ui-gauge-linear",
+        "z": "ab977d77e32982dd",
+        "name": "Temperature",
+        "group": "0167e04414bca36b",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "min": 0,
+        "max": "100",
+        "ticks": [],
+        "colors": [
+            {
+                "size": 100,
+                "color": "rgb(0, 227, 0)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(0, 227, 0)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(0, 227, 0)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(0, 227, 0)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(0, 227, 0)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(0, 227, 0)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(0, 227, 0)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(0, 227, 0)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(0, 227, 0)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(255, 169, 22)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(255, 169, 22)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(255, 169, 22)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(255, 169, 22)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(255, 169, 22)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(255, 169, 22)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(255, 169, 22)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(255, 169, 22)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(255, 169, 22)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(255, 76, 22)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(255, 76, 22)"
+            }
+        ],
+        "zeroCrossColors": [
+            "#ff4c16",
+            "#00e300"
+        ],
+        "mode": "default",
+        "bar": "segmented",
+        "minLabel": "",
+        "maxLabel": "",
+        "label": "Temperature",
+        "icon": "",
+        "unit": "°C",
+        "dim": 0.2,
+        "property": "payload",
+        "decimals": "0",
+        "zeros": true,
+        "myclass": "",
+        "x": 1570,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "94b70a19cc3d5bc9",
+        "type": "ui-gauge-linear",
+        "z": "ab977d77e32982dd",
+        "name": "Humidity",
+        "group": "d09071f23f0191a8",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "min": 0,
+        "max": "100",
+        "ticks": [],
+        "colors": [
+            {
+                "size": 100,
+                "color": "rgb(0, 227, 0)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(0, 227, 0)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(0, 227, 0)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(0, 227, 0)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(0, 227, 0)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(0, 227, 0)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(0, 227, 0)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(0, 227, 0)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(0, 227, 0)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(255, 169, 22)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(255, 169, 22)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(255, 169, 22)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(255, 169, 22)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(255, 169, 22)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(255, 169, 22)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(255, 169, 22)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(255, 169, 22)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(255, 169, 22)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(255, 76, 22)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(255, 76, 22)"
+            }
+        ],
+        "zeroCrossColors": [
+            "#ff4c16",
+            "#00e300"
+        ],
+        "mode": "default",
+        "bar": "segmented",
+        "minLabel": "",
+        "maxLabel": "",
+        "label": "Humidity",
+        "icon": "",
+        "unit": "%",
+        "dim": 0.2,
+        "property": "payload",
+        "decimals": "0",
+        "zeros": true,
+        "myclass": "",
+        "x": 1560,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "63a5a16c6c194c24",
+        "type": "ui-gauge-linear",
+        "z": "ab977d77e32982dd",
+        "name": "Light",
+        "group": "8438fab877cbb2a6",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "min": 0,
+        "max": "100",
+        "ticks": [],
+        "colors": [
+            {
+                "size": 100,
+                "color": "rgb(255, 76, 22)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(255, 76, 22)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(255, 76, 22)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(255, 76, 22)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(255, 76, 22)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(255, 76, 22)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(255, 76, 22)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(255, 169, 22)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(255, 169, 22)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(255, 169, 22)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(255, 169, 22)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(255, 169, 22)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(255, 169, 22)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(255, 169, 22)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(0, 227, 0)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(0, 227, 0)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(0, 227, 0)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(0, 227, 0)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(0, 227, 0)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(0, 227, 0)"
+            }
+        ],
+        "zeroCrossColors": [
+            "#ff4c16",
+            "#00e300"
+        ],
+        "mode": "default",
+        "bar": "segmented",
+        "minLabel": "",
+        "maxLabel": "",
+        "label": "Light Level",
+        "icon": "",
+        "unit": "%",
+        "dim": 0.2,
+        "property": "payload",
+        "decimals": "0",
+        "zeros": true,
+        "myclass": "",
+        "x": 1550,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "c4b30df3a4371f3b",
+        "type": "ui-gauge-linear",
+        "z": "ab977d77e32982dd",
+        "name": "Soil Moisture",
+        "group": "d1c773e9feb68264",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "min": 0,
+        "max": "100",
+        "ticks": [],
+        "colors": [
+            {
+                "size": 100,
+                "color": "rgb(0, 227, 0)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(0, 227, 0)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(0, 227, 0)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(0, 227, 0)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(0, 227, 0)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(0, 227, 0)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(0, 227, 0)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(0, 227, 0)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(0, 227, 0)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(0, 227, 0)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(0, 227, 0)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(0, 227, 0)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(0, 227, 0)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(0, 227, 0)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(255, 169, 22)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(255, 169, 22)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(255, 169, 22)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(255, 169, 22)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(255, 76, 22)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(255, 76, 22)"
+            }
+        ],
+        "zeroCrossColors": [
+            "#ff4c16",
+            "#00e300"
+        ],
+        "mode": "default",
+        "bar": "segmented",
+        "minLabel": "",
+        "maxLabel": "",
+        "label": "Soil Moisture",
+        "icon": "",
+        "unit": "%",
+        "dim": 0.2,
+        "property": "payload",
+        "decimals": "0",
+        "zeros": true,
+        "myclass": "",
+        "x": 1570,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "b670b3ed9c477345",
+        "type": "ui-gauge-linear",
+        "z": "ab977d77e32982dd",
+        "name": "Water Level",
+        "group": "b96e23c0bcb72a62",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "min": 0,
+        "max": "100",
+        "ticks": [],
+        "colors": [
+            {
+                "size": 100,
+                "color": "rgb(255, 76, 22)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(255, 76, 22)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(255, 76, 22)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(255, 76, 22)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(255, 76, 22)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(255, 169, 22)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(255, 169, 22)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(255, 169, 22)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(255, 169, 22)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(255, 169, 22)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(255, 169, 22)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(255, 169, 22)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(255, 169, 22)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(255, 169, 22)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(255, 169, 22)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(0, 227, 0)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(0, 227, 0)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(0, 227, 0)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(0, 227, 0)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(0, 227, 0)"
+            }
+        ],
+        "zeroCrossColors": [
+            "#ff4c16",
+            "#00e300"
+        ],
+        "mode": "default",
+        "bar": "segmented",
+        "minLabel": "",
+        "maxLabel": "",
+        "label": "Water Level",
+        "icon": "",
+        "unit": "%",
+        "dim": "0.2",
+        "property": "payload",
+        "decimals": "0",
+        "zeros": true,
+        "myclass": "",
+        "x": 1570,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "e694537da84e3d9e",
+        "type": "ui-notification",
+        "z": "ab977d77e32982dd",
+        "ui": "7985d7616ba4221a",
+        "position": "bottom center",
+        "colorDefault": true,
+        "color": "#000000",
+        "displayTime": "",
+        "showCountdown": false,
+        "outputs": 1,
+        "allowDismiss": true,
+        "dismissText": "Close",
+        "allowConfirm": false,
+        "confirmText": "Confirm",
+        "raw": true,
+        "className": "",
+        "name": "",
+        "x": 800,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "75744789720ef9ff",
+        "type": "function",
+        "z": "ab977d77e32982dd",
+        "name": "Format Alarm Message",
+        "func": "let text = msg.payload.toLowerCase();\nlet title = \"🔔 Alert\";\nlet body = \"\";\nlet color = \"orange\";\n\n// Customize message display\nif (text.includes(\"pump stopped (water level 0%)\") && text.includes(\"0%\")) {\n    title = \"🛑 Pump Stopped\";\n    body = \"💧 Water level is at 0%.\";\n    color = \"red\";\n\n} else if (text.includes(\"pump stopped\")) {\n    title = \"🛑 Pump Stopped\";\n    body = \"Watering has completed.\";\n    color = \"red\";\n\n} else if (text.includes(\"pump activated\")) {\n    title = \"🚿 Pump Activated\";\n    body = \"Watering has started.\";\n    color = \"green\";\n\n} else if (text.includes(\"water level low\")) {\n    title = \"⚠️ Water Level Low\";\n    body = \"Please refill the water reservoir.\";\n    color = \"orange\";\n} else if (text.includes(\"light level low\")) {\n    title = \"🌤️ Light Level Low\";\n    body = \"Move the plant to a brighter area.\";\n    color = \"orange\";\n}\n\n// Return formatted message\nreturn {\n    payload: `\n        <div style=\"line-height:1.5; padding:10px; border-radius:10px;\">\n            <b>${title}</b><br>${body}\n        </div>\n    `,\n    color: color,\n    position: \"top right\",\n    duration: 6\n};",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 600,
+        "wires": [
+            [
+                "e694537da84e3d9e"
+            ]
+        ]
+    },
+    {
+        "id": "a6b604d5967c4667",
+        "type": "inject",
+        "z": "ab977d77e32982dd",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "water level low",
+        "payloadType": "str",
+        "x": 100,
+        "y": 760,
+        "wires": [
+            [
+                "75744789720ef9ff"
+            ]
+        ]
+    },
+    {
+        "id": "d5bee3ec76907891",
+        "type": "inject",
+        "z": "ab977d77e32982dd",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Move plant to light",
+        "payloadType": "str",
+        "x": 110,
+        "y": 840,
+        "wires": [
+            [
+                "75744789720ef9ff"
+            ]
+        ]
+    },
+    {
+        "id": "87bf8b69f9919163",
+        "type": "inject",
+        "z": "ab977d77e32982dd",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "pump stopped (water level 0%)",
+        "payloadType": "str",
+        "x": 90,
+        "y": 900,
+        "wires": [
+            [
+                "75744789720ef9ff"
+            ]
+        ]
+    },
+    {
+        "id": "d1b0763aea574468",
+        "type": "inject",
+        "z": "ab977d77e32982dd",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "light level low",
+        "payloadType": "str",
+        "x": 110,
+        "y": 960,
+        "wires": [
+            [
+                "75744789720ef9ff"
+            ]
+        ]
+    },
+    {
+        "id": "9a4984ba4c0eb539",
+        "type": "ui-template",
+        "z": "ab977d77e32982dd",
+        "group": "f208cf04a85449a2",
+        "page": "",
+        "ui": "",
+        "name": "Legend",
+        "order": 3,
+        "width": "1",
+        "height": "1",
+        "head": "",
+        "format": "<div style=\"text-align:center\">\n  <img src=\"/legend.jpg\" style=\"max-width:100%; height:auto; border:none;\" />\n</div>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1560,
+        "y": 640,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bd09b99a96106e6e",
+        "type": "function",
+        "z": "ab977d77e32982dd",
+        "name": "Message gating",
+        "func": "// Get the current topic\nlet topic = msg.topic || \"default\";\n\n// Get the full counter map from context, or create one\nlet counters = context.get(\"counters\") || {};\n\n// Get the counter for this topic, default to 0\nlet count = counters[topic] || 0;\ncount++;\n\n// Update the counter for this topic\ncounters[topic] = count;\n\n// Save back to context\ncontext.set(\"counters\", counters);\n\n// Allow 1st and every 301st message for this topic\nif (count === 1 || count % 300 === 1) {\n    return msg;\n}\n\n// Otherwise, block\nreturn null;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1200,
+        "y": 160,
+        "wires": [
+            [
+                "245350232ab06e5d",
+                "c276190bc1abd971"
+            ]
+        ]
+    },
+    {
+        "id": "2a4e397bf66bfe16",
+        "type": "function",
+        "z": "ab977d77e32982dd",
+        "name": "Message gating",
+        "func": "// Get the current topic\nlet topic = msg.topic || \"default\";\n\n// Get the full counter map from context, or create one\nlet counters = context.get(\"counters\") || {};\n\n// Get the counter for this topic, default to 0\nlet count = counters[topic] || 0;\ncount++;\n\n// Update the counter for this topic\ncounters[topic] = count;\n\n// Save back to context\ncontext.set(\"counters\", counters);\n\n// Allow 1st and every 301st message for this topic\nif (count === 1 || count % 300 === 1) {\n    return msg;\n}\n\n// Otherwise, block\nreturn null;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1180,
+        "y": 260,
+        "wires": [
+            [
+                "13c55fb6ae3bf311",
+                "54039aa2ec910c2d"
+            ]
+        ]
+    },
+    {
+        "id": "c276190bc1abd971",
+        "type": "debug",
+        "z": "ab977d77e32982dd",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1440,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "54039aa2ec910c2d",
+        "type": "debug",
+        "z": "ab977d77e32982dd",
+        "name": "debug 24",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1340,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "4b69230466ae40d9",
+        "type": "function",
+        "z": "ab977d77e32982dd",
+        "name": "Trigger Light Alarm",
+        "func": "let currentTab = global.get(\"activeTab\", \"memory\");\n\nif (currentTab === \"Settings\") {\n    return null;  // Disable logic when on Settings page\n}\n\n// Rest of your logic:\nlet dLight = global.get(\"sLightAlarm\", \"file\");\nlet mLight2 = global.get(\"manual_light_alarm\", \"file\");\nlet option4Alarm = global.get(\"option4Alarm\", \"file\");\nlet armed = context.get(\"armed\") ?? true;\n\nlet threshold = option4Alarm === \"manual\" ? mLight2 : dLight;\n\nif (msg.payload < threshold) {\n    if (armed) {\n        context.set(\"armed\", false);\n        return msg;\n    }\n} else {\n    context.set(\"armed\", true);\n}\n\nreturn null;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1110,
+        "y": 800,
+        "wires": [
+            [
+                "0d466dbb618d9c86"
+            ]
+        ]
+    },
+    {
+        "id": "0d466dbb618d9c86",
+        "type": "function",
+        "z": "ab977d77e32982dd",
+        "name": "Light level alarm",
+        "func": "msg.payload = 'light level low';\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 860,
+        "y": 720,
+        "wires": [
+            [
+                "75744789720ef9ff"
+            ]
+        ]
+    },
+    {
+        "id": "9290f78d7d2e24f0",
+        "type": "inject",
+        "z": "c34fcf6801391620",
+        "name": "Read Table",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "SELECT * FROM plant_data;",
+        "payload": "",
+        "payloadType": "str",
+        "x": 150,
+        "y": 100,
+        "wires": [
+            [
+                "4030c0118b46ed6c"
+            ]
+        ]
+    },
+    {
+        "id": "4030c0118b46ed6c",
+        "type": "sqlite",
+        "z": "c34fcf6801391620",
+        "mydb": "83edf8a114e1c8db",
+        "sqlquery": "msg.topic",
+        "sql": "",
+        "name": "SQLite (Read)",
+        "x": 350,
+        "y": 100,
+        "wires": [
+            [
+                "95ec07fd580dd6ac"
+            ]
+        ]
+    },
+    {
+        "id": "95ec07fd580dd6ac",
+        "type": "debug",
+        "z": "c34fcf6801391620",
+        "name": "Table Content",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "complete": "true",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 540,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "a89f9958bb1035d8",
+        "type": "inject",
+        "z": "c34fcf6801391620",
+        "name": "Clear Table",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "DELETE FROM plant_data;",
+        "payload": "",
+        "payloadType": "str",
+        "x": 150,
+        "y": 180,
+        "wires": [
+            [
+                "190e74506d7a3eb8"
+            ]
+        ]
+    },
+    {
+        "id": "190e74506d7a3eb8",
+        "type": "sqlite",
+        "z": "c34fcf6801391620",
+        "mydb": "83edf8a114e1c8db",
+        "sqlquery": "msg.topic",
+        "sql": "",
+        "name": "SQLite (Clear)",
+        "x": 350,
+        "y": 180,
+        "wires": [
+            [
+                "297a429fc6af49cd"
+            ]
+        ]
+    },
+    {
+        "id": "297a429fc6af49cd",
+        "type": "debug",
+        "z": "c34fcf6801391620",
+        "name": "Cleared Confirmation",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 570,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "296b6686612c823b",
+        "type": "inject",
+        "z": "562f935fc93b601d",
+        "name": "Initialize Table",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 2,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 170,
+        "y": 120,
+        "wires": [
+            [
+                "215ea5340806345c"
+            ]
+        ]
+    },
+    {
+        "id": "215ea5340806345c",
+        "type": "function",
+        "z": "562f935fc93b601d",
+        "name": "Create Table Query",
+        "func": "msg.topic = `\nCREATE TABLE IF NOT EXISTS plant_data (\n    plant_name TEXT,\n    type TEXT,\n    soil_moisture INTEGER,\n    light INTEGER,\n    temperature INTEGER,\n    humidity INTEGER,\n    image_file TEXT,\n    manual_moisture INTEGER,\n    manual_light INTEGER,\n    sync_grow_light INTEGER,\n    s_flag INTEGER\n);`;\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 120,
+        "wires": [
+            [
+                "4d2405e9687d2fda"
+            ]
+        ]
+    },
+    {
+        "id": "4d2405e9687d2fda",
+        "type": "sqlite",
+        "z": "562f935fc93b601d",
+        "mydb": "47f5166bf1fd51e7",
+        "sqlquery": "msg.topic",
+        "name": "SQLite DB",
+        "x": 610,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fa1c9158f664f4fb",
+        "type": "inject",
+        "z": "513bf3097d98fcd6",
+        "name": "Drop plant_data Table",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "drop",
+        "payloadType": "str",
+        "x": 160,
+        "y": 120,
+        "wires": [
+            [
+                "c7df86ccbf8830f8"
+            ]
+        ]
+    },
+    {
+        "id": "c7df86ccbf8830f8",
+        "type": "function",
+        "z": "513bf3097d98fcd6",
+        "name": "Drop Table Query",
+        "func": "msg.topic = \"DROP TABLE IF EXISTS plant_data;\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 120,
+        "wires": [
+            [
+                "b89039ade5b81a20"
+            ]
+        ]
+    },
+    {
+        "id": "b89039ade5b81a20",
+        "type": "sqlite",
+        "z": "513bf3097d98fcd6",
+        "mydb": "20d3e99e7e579814",
+        "sqlquery": "msg.topic",
+        "name": "SQLite DB",
+        "x": 570,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a1b3a60997ff5736",
+        "type": "inject",
+        "z": "b5bf93cb79fb6483",
+        "name": "Load CSV to DB",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 120,
+        "y": 80,
+        "wires": [
+            [
+                "501bfcd44204d27f"
+            ]
+        ]
+    },
+    {
+        "id": "501bfcd44204d27f",
+        "type": "function",
+        "z": "b5bf93cb79fb6483",
+        "name": "DELETE from plant_data",
+        "func": "msg.topic = \"DELETE FROM plant_data;\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 80,
+        "wires": [
+            [
+                "cb3036bb41c60dc1"
+            ]
+        ]
+    },
+    {
+        "id": "cb3036bb41c60dc1",
+        "type": "sqlite",
+        "z": "b5bf93cb79fb6483",
+        "mydb": "5f6578962f9afc3c",
+        "sqlquery": "msg.topic",
+        "name": "Clear DB",
+        "x": 540,
+        "y": 80,
+        "wires": [
+            [
+                "bdc3dacc88a868f5"
+            ]
+        ]
+    },
+    {
+        "id": "bdc3dacc88a868f5",
+        "type": "function",
+        "z": "b5bf93cb79fb6483",
+        "name": "Read CSV Next",
+        "func": "// Now that the table is cleared, let's read the CSV.\n// We'll set up a new property to carry forward.\n// Or we can just reuse msg, but we'll remove topic.\n\nmsg.topic = null; // no longer needed.\nmsg.filename = \"/home/pi/plantDB.csv\"; // Update if needed.\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 720,
+        "y": 80,
+        "wires": [
+            [
+                "2250d9b24277ca7d"
+            ]
+        ]
+    },
+    {
+        "id": "2250d9b24277ca7d",
+        "type": "file in",
+        "z": "b5bf93cb79fb6483",
+        "name": "Read CSV File",
+        "filename": "filename",
+        "filenameType": "msg",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 130,
+        "y": 160,
+        "wires": [
+            [
+                "33b7bb7b3c46af5b"
+            ]
+        ]
+    },
+    {
+        "id": "33b7bb7b3c46af5b",
+        "type": "csv",
+        "z": "b5bf93cb79fb6483",
+        "name": "Parse CSV",
+        "sep": ",",
+        "hdrin": true,
+        "hdrout": "none",
+        "multi": "one",
+        "ret": "\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": false,
+        "include_null_values": false,
+        "x": 310,
+        "y": 160,
+        "wires": [
+            [
+                "aa305e0508caf3dc",
+                "7d1624cf5b6db53a"
+            ]
+        ]
+    },
+    {
+        "id": "7d1624cf5b6db53a",
+        "type": "function",
+        "z": "b5bf93cb79fb6483",
+        "name": "Build INSERT",
+        "func": "// Each row is something like:\n// {\n//   plant_name: \"Aglaonema\",\n//   type: \"Herbaceous, perennial\",\n//   soil_moisture: \"40\",\n//   light: \"100\",\n//   temperature: \"22\",\n//   humidity: \"40\",\n//   image_file: \"aglaonema.jpg\"\n// }\n\n// Convert numeric fields from string to integer.\nlet row = msg.payload;\n\nlet name = row.plant_name || \"\";\nlet ptype = row.type || \"\";\nlet soil = parseInt(row.soil_moisture || 0);\nlet light = parseInt(row.light || 0);\nlet temp = parseInt(row.temperature || 0);\nlet hum = parseInt(row.humidity || 0);\nlet img = row.image_file || \"\";\nlet mmoist = parseInt(row.manual_moisture || 0);\nlet mlight = parseInt(row.manual_light || 0);\nlet sgl = parseInt(row.sync_grow_light || 0);\nlet sflg = parseInt(row.sync_grow_light || 0);\n\nmsg.topic = `INSERT INTO plant_data (\n  plant_name,\n  type,\n  soil_moisture,\n  light,\n  temperature,\n  humidity,\n  image_file,\n  manual_moisture,\n  manual_light,\n  sync_grow_light,\n  s_flag\n) VALUES (\n  '${name}',\n  '${ptype}',\n  ${soil},\n  ${light},\n  ${temp},\n  ${hum},\n  '${img}',\n  ${mmoist},\n  ${mlight},\n  ${sgl},\n  ${sflg}\n);`;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 160,
+        "wires": [
+            [
+                "88a07695ef45b9fb",
+                "f2e329cf4c4bee6b"
+            ]
+        ]
+    },
+    {
+        "id": "88a07695ef45b9fb",
+        "type": "sqlite",
+        "z": "b5bf93cb79fb6483",
+        "mydb": "5f6578962f9afc3c",
+        "sqlquery": "msg.topic",
+        "name": "Insert into DB",
+        "x": 880,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f2e329cf4c4bee6b",
+        "type": "debug",
+        "z": "b5bf93cb79fb6483",
+        "name": "debug 10",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 780,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "aa305e0508caf3dc",
+        "type": "debug",
+        "z": "b5bf93cb79fb6483",
+        "name": "debug 12",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 460,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "398a2cb452b7df6c",
+        "type": "inject",
+        "z": "c640fc672af41d49",
+        "name": "Load Plants",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 170,
+        "y": 260,
+        "wires": [
+            [
+                "09a934fba39805ac"
+            ]
+        ]
+    },
+    {
+        "id": "09a934fba39805ac",
+        "type": "function",
+        "z": "c640fc672af41d49",
+        "name": "Build Query (Dropdown)",
+        "func": "msg.topic = \"SELECT plant_name FROM plant_data;\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 260,
+        "wires": [
+            [
+                "9ceb51dccae17aac"
+            ]
+        ]
+    },
+    {
+        "id": "9ceb51dccae17aac",
+        "type": "sqlite",
+        "z": "c640fc672af41d49",
+        "mydb": "228416cd.4bc082",
+        "sqlquery": "msg.topic",
+        "name": "Query DB (for dropdown)",
+        "x": 610,
+        "y": 260,
+        "wires": [
+            [
+                "47828250d691b1d3"
+            ]
+        ]
+    },
+    {
+        "id": "47828250d691b1d3",
+        "type": "function",
+        "z": "c640fc672af41d49",
+        "name": "Build Dropdown Options",
+        "func": "let rows = msg.payload;\nmsg.options = rows.map(row => ({text: row.plant_name, value: row.plant_name}));\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 870,
+        "y": 260,
+        "wires": [
+            [
+                "ff972ca85303ea07"
+            ]
+        ]
+    },
+    {
+        "id": "ff972ca85303ea07",
+        "type": "ui-dropdown",
+        "z": "c640fc672af41d49",
+        "group": "6e23d1d9b0d47c85",
+        "name": "Select Plant",
+        "label": "Select Plant",
+        "order": 1,
+        "width": "",
+        "height": "",
+        "passthru": true,
+        "multiple": false,
+        "chips": false,
+        "clearable": false,
+        "options": [],
+        "topic": "",
+        "topicType": "str",
+        "className": "",
+        "typeIsComboBox": true,
+        "msgTrigger": "onChange",
+        "x": 1150,
+        "y": 260,
+        "wires": [
+            [
+                "7680cc6816e2d6fe",
+                "044f82b23a6a4fa0"
+            ]
+        ]
+    },
+    {
+        "id": "7680cc6816e2d6fe",
+        "type": "function",
+        "z": "c640fc672af41d49",
+        "name": "Build SELECT for Chosen Plant",
+        "func": "const chosenPlant = msg.payload;\nmsg.topic = `SELECT * FROM plant_data WHERE plant_name = '${chosenPlant}' LIMIT 1;`;\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 440,
+        "wires": [
+            [
+                "ab10c8832ca2370f"
+            ]
+        ]
+    },
+    {
+        "id": "ab10c8832ca2370f",
+        "type": "sqlite",
+        "z": "c640fc672af41d49",
+        "mydb": "228416cd.4bc082",
+        "sqlquery": "msg.topic",
+        "name": "Query DB (Chosen Plant)",
+        "x": 890,
+        "y": 440,
+        "wires": [
+            [
+                "31fdc0551e57b092"
+            ]
+        ]
+    },
+    {
+        "id": "31fdc0551e57b092",
+        "type": "function",
+        "z": "c640fc672af41d49",
+        "name": "Format Row for Template",
+        "func": "let sName = \"\";\nlet sMoisture = 0;\nlet sLight = 0;\nlet manual_moisture = 0;\nlet manual_light = 0;\nlet sync_grow_light = 0;\nlet s_flag = 0;\n\nif (!Array.isArray(msg.payload) || msg.payload.length === 0) {\n    node.warn(\"No matching plant data\");\n    return msg;\n}\n\nlet row = msg.payload[0];\n\nmsg.payload = {\n    name: row.plant_name,\n    moisture: row.soil_moisture,\n    light: row.light,\n    temp: row.temperature,\n    humidity: row.humidity,\n    manual_moisture: row.manual_moisture,\n    manual_light: row.manual_light,\n    sync_grow_light: row.sync_grow_light,\n    s_flag: row.s_flag,\n    image: '/' + row.image_file\n};\n\nsName = msg.payload.name;\nsMoisture = msg.payload.moisture;\nsLight = msg.payload.light;\nmanual_moisture= msg.payload.manual_moisture;\nmanual_light = msg.payload.manual_light;\nsync_grow_light = msg.payload.sync_grow_light;\ns_flag = msg.payload.s_flag;\n\nflow.set('sName', sName, 'persistent');\nflow.set('sMoisture', sMoisture, 'persistent');\nflow.set('sLight', sLight, 'persistent');\nflow.set('manual_moisture', manual_moisture, 'persistent');\nflow.set('manual_light', manual_light, 'persistent');\nflow.set('sync_grow_light', sync_grow_light, 'persistent');\nflow.set('s_flag', s_flag, 'persistent');\nglobal.set(\"sLightAlarm\", sLight, \"file\");\nglobal.set(\"manual_light_alarm\", manual_light, \"file\");\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1170,
+        "y": 440,
+        "wires": [
+            [
+                "132a538c52a70a7b",
+                "0650817e436c9024",
+                "55b0b2ad4b4942ad",
+                "5ba9fda9496a0cfa"
+            ]
+        ]
+    },
+    {
+        "id": "132a538c52a70a7b",
+        "type": "ui-template",
+        "z": "c640fc672af41d49",
+        "group": "cb261ebf584deb7a",
+        "page": "",
+        "ui": "",
+        "name": "Plant Picture",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<template>\n  <div style=\"position: relative; width: 100%; margin:0 auto;\">\n    <v-img\n      v-if=\"msg.payload.image\"\n      aspect-ratio=\"16/9\"\n      cover\n      :src=\"msg.payload.image\"\n      style=\"border-radius: 12px;\"\n    ></v-img>\n\n    <div style=\"\n        position: absolute;\n        bottom: 5%;\n        right: 3%;\n        background-color: rgba(212,237,218,0.75);\n        color: #333;\n        padding: 1.5vw;\n        border-radius: 12px;\n        box-shadow: 0 4px 8px rgba(0,0,0,0.1);\n        text-align: left;\n        font-size: 4.0vw;\n    \">\n      <div><b>Name:</b> {{msg.payload.name}}</div>\n      <div><b>Soil Moisture:</b> {{msg.payload.moisture}}%</div>\n      <div><b>Light:</b> {{msg.payload.light}}%</div>\n      <div><b>Temperature:</b> {{msg.payload.temp}}°C</div>\n      <div><b>Humidity:</b> {{msg.payload.humidity}}%</div>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  watch: {\n    msg: { immediate: true, handler() {} }\n  }\n}\n</script>\n",
+        "storeOutMessages": true,
+        "passthru": false,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1530,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0650817e436c9024",
+        "type": "debug",
+        "z": "c640fc672af41d49",
+        "name": "debug 6",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1520,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "4f38ac9eb823193e",
+        "type": "mqtt out",
+        "z": "c640fc672af41d49",
+        "name": "",
+        "topic": "planter01/pump",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "1979560e0685423f",
+        "x": 740,
+        "y": 1460,
+        "wires": []
+    },
+    {
+        "id": "9077b4fc2c770199",
+        "type": "ui-button",
+        "z": "c640fc672af41d49",
+        "group": "6e23d1d9b0d47c85",
+        "name": "Manual Watering",
+        "label": "Manual Watering",
+        "order": 8,
+        "width": 6,
+        "height": 0,
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "pump on",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 510,
+        "y": 1460,
+        "wires": [
+            [
+                "4f38ac9eb823193e"
+            ]
+        ]
+    },
+    {
+        "id": "4922aab5f2214dc3",
+        "type": "ui-slider",
+        "z": "c640fc672af41d49",
+        "group": "6e23d1d9b0d47c85",
+        "name": "Moisture",
+        "label": "Moisture",
+        "tooltip": "",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "outs": "all",
+        "topic": "topic",
+        "topicType": "msg",
+        "thumbLabel": "true",
+        "showTicks": "true",
+        "min": "0",
+        "max": "100",
+        "step": "1",
+        "className": "",
+        "iconPrepend": "",
+        "iconAppend": "",
+        "color": "blue",
+        "colorTrack": "orange",
+        "colorThumb": "",
+        "showTextField": true,
+        "x": 1900,
+        "y": 760,
+        "wires": [
+            [
+                "be568ef4192f37bb",
+                "1cdb9c8ff95ed5b8"
+            ]
+        ]
+    },
+    {
+        "id": "e3f9fa6c3d1d04c9",
+        "type": "ui-slider",
+        "z": "c640fc672af41d49",
+        "group": "6e23d1d9b0d47c85",
+        "name": "Light",
+        "label": "Light ",
+        "tooltip": "",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "outs": "all",
+        "topic": "topic",
+        "topicType": "msg",
+        "thumbLabel": "true",
+        "showTicks": "true",
+        "min": "0",
+        "max": "100",
+        "step": "1",
+        "className": "",
+        "iconPrepend": "",
+        "iconAppend": "",
+        "color": "blue",
+        "colorTrack": "orange",
+        "colorThumb": "",
+        "showTextField": true,
+        "x": 1910,
+        "y": 900,
+        "wires": [
+            [
+                "a74518a05b4c7809",
+                "1cdb9c8ff95ed5b8"
+            ]
+        ]
+    },
+    {
+        "id": "5a834972482f4bfb",
+        "type": "ui-button",
+        "z": "c640fc672af41d49",
+        "group": "6e23d1d9b0d47c85",
+        "name": "Save settings",
+        "label": "Save",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 200,
+        "y": 1920,
+        "wires": [
+            [
+                "a91dcaf3a783bdc4"
+            ]
+        ]
+    },
+    {
+        "id": "87538efbbba2ffc8",
+        "type": "ui-switch",
+        "z": "c640fc672af41d49",
+        "name": "Sync Grow Light",
+        "label": "Sync Grow Light",
+        "group": "6e23d1d9b0d47c85",
+        "order": 5,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "decouple": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "layout": "row-left",
+        "clickableArea": "switch",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 500,
+        "y": 1400,
+        "wires": [
+            [
+                "321e72c1f977e55b",
+                "e8b66ba0abb09b5f"
+            ]
+        ]
+    },
+    {
+        "id": "bbada75605b88e48",
+        "type": "ui-radio-group",
+        "z": "c640fc672af41d49",
+        "group": "6e23d1d9b0d47c85",
+        "name": "",
+        "label": "Threshold Option:",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "columns": "2",
+        "passthru": true,
+        "options": [
+            {
+                "label": "Default",
+                "value": "default",
+                "type": "str"
+            },
+            {
+                "label": "Manual",
+                "value": "manual",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 430,
+        "y": 700,
+        "wires": [
+            [
+                "20ce670f91bd50fc",
+                "cb717296fa65fc08"
+            ]
+        ]
+    },
+    {
+        "id": "20ce670f91bd50fc",
+        "type": "function",
+        "z": "c640fc672af41d49",
+        "name": "Enable/Disable Sliders",
+        "func": "if (msg.payload === 'manual') {\n    return [{ enabled: true }, null];  // Output 1\n} else {\n    return [null, { enabled: false }]; // Output 2\n}",
+        "outputs": 2,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 680,
+        "y": 700,
+        "wires": [
+            [
+                "c5fe42c3e2d3658c",
+                "e068a235b6dbe8a2",
+                "4877ed8cdb51bbc6"
+            ],
+            [
+                "e984c56d83db902e",
+                "9e6d4ef6c4ce374c",
+                "87538efbbba2ffc8"
+            ]
+        ]
+    },
+    {
+        "id": "8416bf2b383e9555",
+        "type": "inject",
+        "z": "c640fc672af41d49",
+        "name": "Enable",
+        "props": [
+            {
+                "p": "enabled",
+                "v": "true",
+                "vt": "bool"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 1710,
+        "y": 720,
+        "wires": [
+            [
+                "4922aab5f2214dc3"
+            ]
+        ]
+    },
+    {
+        "id": "14d7f3823789a204",
+        "type": "inject",
+        "z": "c640fc672af41d49",
+        "name": "Disable",
+        "props": [
+            {
+                "p": "enabled",
+                "v": "false",
+                "vt": "bool"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 1670,
+        "y": 800,
+        "wires": [
+            [
+                "4922aab5f2214dc3"
+            ]
+        ]
+    },
+    {
+        "id": "38d7c4cb54897266",
+        "type": "inject",
+        "z": "c640fc672af41d49",
+        "name": "Enable",
+        "props": [
+            {
+                "p": "enabled",
+                "v": "true",
+                "vt": "bool"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 1790,
+        "y": 860,
+        "wires": [
+            [
+                "e3f9fa6c3d1d04c9"
+            ]
+        ]
+    },
+    {
+        "id": "51ce72ab8577c0f3",
+        "type": "inject",
+        "z": "c640fc672af41d49",
+        "name": "Disable",
+        "props": [
+            {
+                "p": "enabled",
+                "v": "false",
+                "vt": "bool"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 1690,
+        "y": 960,
+        "wires": [
+            [
+                "e3f9fa6c3d1d04c9"
+            ]
+        ]
+    },
+    {
+        "id": "e984c56d83db902e",
+        "type": "function",
+        "z": "c640fc672af41d49",
+        "name": "Set Moisture Slider",
+        "func": "msg.payload = flow.get('sMoisture', 'persistent');\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1350,
+        "y": 760,
+        "wires": [
+            [
+                "4922aab5f2214dc3"
+            ]
+        ]
+    },
+    {
+        "id": "9e6d4ef6c4ce374c",
+        "type": "function",
+        "z": "c640fc672af41d49",
+        "name": "Set Light Slider",
+        "func": "msg.payload = flow.get('sLight', 'persistent');\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1340,
+        "y": 920,
+        "wires": [
+            [
+                "e3f9fa6c3d1d04c9"
+            ]
+        ]
+    },
+    {
+        "id": "be568ef4192f37bb",
+        "type": "function",
+        "z": "c640fc672af41d49",
+        "name": "Save Moisture Slider",
+        "func": "let manual_moisture = 0;\nmanual_moisture = msg.payload;\nflow.set('manual_moisture', manual_moisture, 'persistent')\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2100,
+        "y": 760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a74518a05b4c7809",
+        "type": "function",
+        "z": "c640fc672af41d49",
+        "name": "Save Light Slider",
+        "func": "let manual_light = 0;\nmanual_light = msg.payload;\nflow.set('manual_light', manual_light, 'persistent')\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2130,
+        "y": 900,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c5fe42c3e2d3658c",
+        "type": "function",
+        "z": "c640fc672af41d49",
+        "name": "Set Manual Moisture Slider",
+        "func": "msg.payload = flow.get('manual_moisture', 'persistent');\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1320,
+        "y": 1040,
+        "wires": [
+            [
+                "4922aab5f2214dc3"
+            ]
+        ]
+    },
+    {
+        "id": "1cdb9c8ff95ed5b8",
+        "type": "debug",
+        "z": "c640fc672af41d49",
+        "name": "debug 8",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2120,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "e068a235b6dbe8a2",
+        "type": "function",
+        "z": "c640fc672af41d49",
+        "name": "Set Manual Light Slider",
+        "func": "msg.payload = flow.get('manual_light', 'persistent');\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1450,
+        "y": 1260,
+        "wires": [
+            [
+                "e3f9fa6c3d1d04c9"
+            ]
+        ]
+    },
+    {
+        "id": "321e72c1f977e55b",
+        "type": "function",
+        "z": "c640fc672af41d49",
+        "name": "Set sync_grow_light",
+        "func": "let sync_grow_light = msg.payload;\nflow.set('sync_grow_light', sync_grow_light, 'persistent');\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 720,
+        "y": 1400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5f1d800ec680a133",
+        "type": "sqlite",
+        "z": "c640fc672af41d49",
+        "mydb": "sqlite_db",
+        "sqlquery": "msg.topic",
+        "sql": "",
+        "name": "Save to DB",
+        "x": 1770,
+        "y": 1880,
+        "wires": [
+            [
+                "16ccbb540e35f6ba",
+                "92dee2cf969141d7",
+                "11debc26a58d772e"
+            ]
+        ]
+    },
+    {
+        "id": "a2860e5fb32f9481",
+        "type": "function",
+        "z": "c640fc672af41d49",
+        "name": "Save  manual thresholds",
+        "func": "const manual_moisture=flow.get('manual_moisture', 'persistent');\nconst manual_light=flow.get('manual_light', 'persistent');\nconst sync_grow_light=flow.get('sync_grow_light', 'persistent');\nconst plant=flow.get('sName', 'persistent');\nconst s_flag = 1; // Message saved flag\n\nlet last_saved_plant = \"\";\n//last_saved_plant = plant;\nflow.set('last_saved_plant', plant, 'persistent');\n\nmsg.topic=`UPDATE plant_data SET manual_moisture=${manual_moisture},manual_light=${manual_light},sync_grow_light=${sync_grow_light},s_flag=${s_flag} WHERE plant_name='${plant}';`;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1350,
+        "y": 1700,
+        "wires": [
+            [
+                "5f1d800ec680a133"
+            ]
+        ]
+    },
+    {
+        "id": "044f82b23a6a4fa0",
+        "type": "debug",
+        "z": "c640fc672af41d49",
+        "name": "debug 11",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1520,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "92dee2cf969141d7",
+        "type": "function",
+        "z": "c640fc672af41d49",
+        "name": "Retain current dropdown selection",
+        "func": "msg.payload=flow.get('last_saved_plant', 'persistent');\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 880,
+        "y": 360,
+        "wires": [
+            [
+                "ff972ca85303ea07"
+            ]
+        ]
+    },
+    {
+        "id": "16ccbb540e35f6ba",
+        "type": "debug",
+        "z": "c640fc672af41d49",
+        "name": "debug 12",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2000,
+        "y": 2120,
+        "wires": []
+    },
+    {
+        "id": "55b0b2ad4b4942ad",
+        "type": "function",
+        "z": "c640fc672af41d49",
+        "name": "Gate: Allow only when option 'default' is selected",
+        "func": "let option = flow.get('option') || '';\n\nif (option === 'default') {\n    return msg;\n} else {\n    return null;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1420,
+        "y": 600,
+        "wires": [
+            [
+                "e984c56d83db902e",
+                "9e6d4ef6c4ce374c"
+            ]
+        ]
+    },
+    {
+        "id": "cb717296fa65fc08",
+        "type": "function",
+        "z": "c640fc672af41d49",
+        "name": "function 2",
+        "func": "flow.set('option', msg.payload);\nglobal.set(\"option4Alarm\", msg.payload, \"file\");\nreturn null; // no need to pass message",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "11debc26a58d772e",
+        "type": "function",
+        "z": "c640fc672af41d49",
+        "name": "Settings Saved message",
+        "func": "msg.payload = \"✅ Settings Saved\";\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2010,
+        "y": 1880,
+        "wires": [
+            [
+                "f57e40726d9216e7"
+            ]
+        ]
+    },
+    {
+        "id": "f57e40726d9216e7",
+        "type": "ui-notification",
+        "z": "c640fc672af41d49",
+        "ui": "7985d7616ba4221a",
+        "position": "bottom center",
+        "colorDefault": true,
+        "color": "#000000",
+        "displayTime": "",
+        "showCountdown": false,
+        "outputs": 1,
+        "allowDismiss": true,
+        "dismissText": "Close",
+        "allowConfirm": false,
+        "confirmText": "Confirm",
+        "raw": true,
+        "className": "",
+        "name": "",
+        "x": 2100,
+        "y": 1680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e3b7d61c21eb8828",
+        "type": "switch",
+        "z": "c640fc672af41d49",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "confirm_clicked",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 790,
+        "y": 1720,
+        "wires": [
+            [
+                "2f2ccc6a1a557198",
+                "ee0d9de1ae806a10"
+            ]
+        ]
+    },
+    {
+        "id": "5ba9fda9496a0cfa",
+        "type": "function",
+        "z": "c640fc672af41d49",
+        "name": "Check for saved config",
+        "func": "if (msg.payload.s_flag == 1) {\n    msg.payload = 'manual';\n}else{\n    msg.payload = 'default';\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 860,
+        "y": 540,
+        "wires": [
+            [
+                "4f1dccd1056d78da"
+            ]
+        ]
+    },
+    {
+        "id": "4f1dccd1056d78da",
+        "type": "change",
+        "z": "c640fc672af41d49",
+        "name": "",
+        "rules": [
+            {
+                "t": "delete",
+                "p": "topic",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "options",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 320,
+        "y": 640,
+        "wires": [
+            [
+                "bbada75605b88e48"
+            ]
+        ]
+    },
+    {
+        "id": "a91dcaf3a783bdc4",
+        "type": "function",
+        "z": "c640fc672af41d49",
+        "name": "Switch based on option (manual/default)",
+        "func": "let option = flow.get('option') || '';\n\nif (option === 'manual') {\n    return [msg, null];  // First output for manual\n} else if (option === 'default') {\n    return [null, msg];  // Second output for default\n} else {\n    return [null, null]; // Unknown or unset option\n}",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 2020,
+        "wires": [
+            [
+                "3477971e1352f4d7"
+            ],
+            [
+                "09707ad0f1798c85"
+            ]
+        ]
+    },
+    {
+        "id": "3477971e1352f4d7",
+        "type": "function",
+        "z": "c640fc672af41d49",
+        "name": "Confirm save manual settings",
+        "func": "msg.payload = \"⚠️ confirm save manual settings\";\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 1720,
+        "wires": [
+            [
+                "8bae02f9579d302b"
+            ]
+        ]
+    },
+    {
+        "id": "8bae02f9579d302b",
+        "type": "ui-notification",
+        "z": "c640fc672af41d49",
+        "ui": "7985d7616ba4221a",
+        "position": "bottom center",
+        "colorDefault": true,
+        "color": "#000000",
+        "displayTime": "",
+        "showCountdown": false,
+        "outputs": 1,
+        "allowDismiss": true,
+        "dismissText": "Cancel",
+        "allowConfirm": true,
+        "confirmText": "Confirm",
+        "raw": true,
+        "className": "",
+        "name": "",
+        "x": 610,
+        "y": 1720,
+        "wires": [
+            [
+                "e3b7d61c21eb8828"
+            ]
+        ]
+    },
+    {
+        "id": "09707ad0f1798c85",
+        "type": "function",
+        "z": "c640fc672af41d49",
+        "name": "Confirm revert to default",
+        "func": "if ((flow.get('s_flag', 'persistent')) === 1) {\n    msg.payload = \"⚠️ confirm revert to default\";\n    return msg;\n} else {\n    msg.payload = \"⚠️ confirm save settings\";\n    return msg;\n}\n\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 2260,
+        "wires": [
+            [
+                "257bd1cc1c04ed7f"
+            ]
+        ]
+    },
+    {
+        "id": "257bd1cc1c04ed7f",
+        "type": "ui-notification",
+        "z": "c640fc672af41d49",
+        "ui": "7985d7616ba4221a",
+        "position": "bottom center",
+        "colorDefault": true,
+        "color": "#000000",
+        "displayTime": "",
+        "showCountdown": false,
+        "outputs": 1,
+        "allowDismiss": true,
+        "dismissText": "Cancel",
+        "allowConfirm": true,
+        "confirmText": "Confirm",
+        "raw": true,
+        "className": "",
+        "name": "",
+        "x": 570,
+        "y": 2260,
+        "wires": [
+            [
+                "eacc8fd44123c406"
+            ]
+        ]
+    },
+    {
+        "id": "eacc8fd44123c406",
+        "type": "switch",
+        "z": "c640fc672af41d49",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "confirm_clicked",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 830,
+        "y": 2260,
+        "wires": [
+            [
+                "ee0d9de1ae806a10"
+            ]
+        ]
+    },
+    {
+        "id": "dd8836d217bea43c",
+        "type": "function",
+        "z": "c640fc672af41d49",
+        "name": "Save settings/ Revert to default",
+        "func": "// const manual_moisture=flow.get('mMoisture', 'persistent');\n// const manual_light=flow.get('mLight', 'persistent');\n// const sync_grow_light=flow.get('sync_grow_light', 'persistent');\nconst plant=flow.get('sName', 'persistent');\nconst s_flag = 0; // Message saved flag\nconst sync_grow_light = 0;\n\nlet last_saved_plant = \"\";\n//last_saved_plant = plant;\nflow.set('last_saved_plant', plant, 'persistent');\n\nmsg.topic=`UPDATE plant_data SET s_flag=${s_flag}, sync_grow_light=${sync_grow_light} WHERE plant_name='${plant}';`;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1690,
+        "y": 2200,
+        "wires": [
+            [
+                "5f1d800ec680a133"
+            ]
+        ]
+    },
+    {
+        "id": "38676d1d90233c77",
+        "type": "ui-event",
+        "z": "c640fc672af41d49",
+        "ui": "7985d7616ba4221a",
+        "name": "",
+        "x": 90,
+        "y": 1000,
+        "wires": [
+            [
+                "825d685fc617a7ba",
+                "6a911b987c3259ed",
+                "bc1f8343dc8fae46"
+            ]
+        ]
+    },
+    {
+        "id": "825d685fc617a7ba",
+        "type": "function",
+        "z": "c640fc672af41d49",
+        "name": "Check pageview / pageleave",
+        "func": "if (msg.payload.page.name === \"Settings\" || msg.payload.page.name === \"Home\") {\n    msg.payload = 'reset';\n    return msg;\n} else {\n    return null;\n}\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 1080,
+        "wires": [
+            [
+                "92dee2cf969141d7",
+                "636b96d62e02d69d"
+            ]
+        ]
+    },
+    {
+        "id": "636b96d62e02d69d",
+        "type": "debug",
+        "z": "c640fc672af41d49",
+        "name": "debug 19",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 1100,
+        "wires": []
+    },
+    {
+        "id": "6a911b987c3259ed",
+        "type": "debug",
+        "z": "c640fc672af41d49",
+        "name": "debug 20",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 320,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "4877ed8cdb51bbc6",
+        "type": "function",
+        "z": "c640fc672af41d49",
+        "name": "Set Sync_grow_light",
+        "func": "msg.payload = flow.get('sync_grow_light', 'persistent');\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 220,
+        "y": 1400,
+        "wires": [
+            [
+                "87538efbbba2ffc8",
+                "7a15f4b7dcc16f1c"
+            ]
+        ]
+    },
+    {
+        "id": "7a15f4b7dcc16f1c",
+        "type": "debug",
+        "z": "c640fc672af41d49",
+        "name": "debug 21",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 320,
+        "y": 1480,
+        "wires": []
+    },
+    {
+        "id": "ee0d9de1ae806a10",
+        "type": "function",
+        "z": "c640fc672af41d49",
+        "name": "Save to planter",
+        "func": "const manual_moisture=flow.get('manual_moisture', 'persistent');\nconst default_moisture=flow.get('sMoisture','persistent');\nlet option = flow.get('option') || '';\n\nif (option === 'manual') {\n    msg.payload = manual_moisture;\n} else {\n    msg.payload = default_moisture;\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 1800,
+        "wires": [
+            [
+                "bf4838659dcbd0e5",
+                "68847168336961a5",
+                "6131cd2d5e384dbc"
+            ]
+        ]
+    },
+    {
+        "id": "bf4838659dcbd0e5",
+        "type": "mqtt out",
+        "z": "c640fc672af41d49",
+        "name": "",
+        "topic": "planter01/save",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "1979560e0685423f",
+        "x": 780,
+        "y": 1820,
+        "wires": []
+    },
+    {
+        "id": "b89e7e86dadf0a96",
+        "type": "mqtt in",
+        "z": "c640fc672af41d49",
+        "name": "",
+        "topic": "planter01/confirm",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "1979560e0685423f",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 620,
+        "y": 2060,
+        "wires": [
+            [
+                "7df5c7c6ec86b807",
+                "926671495d020181"
+            ]
+        ]
+    },
+    {
+        "id": "7df5c7c6ec86b807",
+        "type": "function",
+        "z": "c640fc672af41d49",
+        "name": "Saving confirmation msg routing",
+        "func": "if (msg.payload = 'threshold saved') {\n    return [msg, null];\n} else if (msg.payload = 'threshold saving failed') {\n    return [null, msg];\n} else {\n    return [null, null];\n}\n",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 870,
+        "y": 2060,
+        "wires": [
+            [
+                "68f46078689af7ed",
+                "bbcba8e058c97442"
+            ],
+            [
+                "753512c8dfd98abb"
+            ]
+        ]
+    },
+    {
+        "id": "753512c8dfd98abb",
+        "type": "function",
+        "z": "c640fc672af41d49",
+        "name": "Saving failed message",
+        "func": "msg.payload = \"❌ Saving failed. Please ensure that planter is connected\";\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 960,
+        "y": 2120,
+        "wires": [
+            [
+                "790bf2171891fe3e",
+                "d7d12b4c36c51c9b"
+            ]
+        ]
+    },
+    {
+        "id": "68847168336961a5",
+        "type": "debug",
+        "z": "c640fc672af41d49",
+        "name": "debug 9",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 940,
+        "y": 1780,
+        "wires": []
+    },
+    {
+        "id": "68f46078689af7ed",
+        "type": "debug",
+        "z": "c640fc672af41d49",
+        "name": "debug 14",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1140,
+        "y": 2060,
+        "wires": []
+    },
+    {
+        "id": "2f2ccc6a1a557198",
+        "type": "debug",
+        "z": "c640fc672af41d49",
+        "name": "debug 15",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 980,
+        "y": 1720,
+        "wires": []
+    },
+    {
+        "id": "bbcba8e058c97442",
+        "type": "change",
+        "z": "c640fc672af41d49",
+        "name": "",
+        "rules": [
+            {
+                "t": "delete",
+                "p": "topic",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1020,
+        "y": 1920,
+        "wires": [
+            [
+                "1671e2408b5d7d27",
+                "cb6b1d4d21e30fad"
+            ]
+        ]
+    },
+    {
+        "id": "1671e2408b5d7d27",
+        "type": "debug",
+        "z": "c640fc672af41d49",
+        "name": "debug 16",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1500,
+        "y": 1800,
+        "wires": []
+    },
+    {
+        "id": "6131cd2d5e384dbc",
+        "type": "function",
+        "z": "c640fc672af41d49",
+        "name": "Start Timeout",
+        "func": "// Store a timeout handle in flow context\nlet timeout = setTimeout(() => {\n    node.send({ payload: \"Saving failed. Please ensure that planter is connected\", topic: \"timeout\" });\n}, 5000); // 5 seconds\n\nflow.set(\"confirmTimeout\", timeout);\nreturn null; // don't send anything now\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 730,
+        "y": 1900,
+        "wires": [
+            [
+                "4b4f59299b71bc8b",
+                "753512c8dfd98abb"
+            ]
+        ]
+    },
+    {
+        "id": "926671495d020181",
+        "type": "function",
+        "z": "c640fc672af41d49",
+        "name": "Clear Timeout",
+        "func": "let timeout = flow.get(\"confirmTimeout\");\nif (timeout) {\n    clearTimeout(timeout);\n    flow.set(\"confirmTimeout\", null);\n    node.send({ payload: \"Threshold saved successfully!\", topic: \"success\" });\n}\nreturn null;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 820,
+        "y": 1960,
+        "wires": [
+            [
+                "a9c14a07e3876f1d"
+            ]
+        ]
+    },
+    {
+        "id": "4b4f59299b71bc8b",
+        "type": "debug",
+        "z": "c640fc672af41d49",
+        "name": "debug 17",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 920,
+        "y": 1880,
+        "wires": []
+    },
+    {
+        "id": "a9c14a07e3876f1d",
+        "type": "debug",
+        "z": "c640fc672af41d49",
+        "name": "debug 18",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1140,
+        "y": 1960,
+        "wires": []
+    },
+    {
+        "id": "790bf2171891fe3e",
+        "type": "debug",
+        "z": "c640fc672af41d49",
+        "name": "debug 22",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1140,
+        "y": 2200,
+        "wires": []
+    },
+    {
+        "id": "d7d12b4c36c51c9b",
+        "type": "ui-notification",
+        "z": "c640fc672af41d49",
+        "ui": "7985d7616ba4221a",
+        "position": "bottom center",
+        "colorDefault": true,
+        "color": "#000000",
+        "displayTime": "5",
+        "showCountdown": false,
+        "outputs": 1,
+        "allowDismiss": true,
+        "dismissText": "Close",
+        "allowConfirm": false,
+        "confirmText": "Confirm",
+        "raw": true,
+        "className": "",
+        "name": "",
+        "x": 1310,
+        "y": 2120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e8b66ba0abb09b5f",
+        "type": "debug",
+        "z": "c640fc672af41d49",
+        "name": "debug 23",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 740,
+        "y": 1320,
+        "wires": []
+    },
+    {
+        "id": "cb6b1d4d21e30fad",
+        "type": "function",
+        "z": "c640fc672af41d49",
+        "name": "function 1",
+        "func": "let option = flow.get('option') || '';\n\nif (option === 'manual') {\n    return [msg, null];  // First output for manual\n} else if (option === 'default') {\n    return [null, msg];  // Second output for default\n} else {\n    return [null, null]; // Unknown or unset option\n}",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1200,
+        "y": 1800,
+        "wires": [
+            [
+                "a2860e5fb32f9481"
+            ],
+            [
+                "dd8836d217bea43c"
+            ]
+        ]
+    },
+    {
+        "id": "bc1f8343dc8fae46",
+        "type": "function",
+        "z": "c640fc672af41d49",
+        "name": "function 3",
+        "func": "// Extract the page name from the event\nif (msg.topic === \"$pageview\" && msg.payload && msg.payload.page && msg.payload.page.name) {\n    let pageName = msg.payload.page.name;\n    global.set(\"activeTab\", pageName, \"memory\");  // Save in memory context\n    node.warn(\"Active page is now: \" + pageName);\n}\nreturn null;  // We don't need to pass this message forward",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 900,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8e491801eeaed1ae",
+        "type": "comment",
+        "z": "c640fc672af41d49",
+        "name": "Populate Plant Selector",
+        "info": "",
+        "x": 180,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "6e514c40c9a3c856",
+        "type": "comment",
+        "z": "c640fc672af41d49",
+        "name": "UI Event Tracking",
+        "info": "",
+        "x": 140,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "66b88a7d9205c350",
+        "type": "comment",
+        "z": "c640fc672af41d49",
+        "name": "Slider Control",
+        "info": "",
+        "x": 1890,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "4e0dd877db809d9d",
+        "type": "comment",
+        "z": "c640fc672af41d49",
+        "name": "Grow Light Control",
+        "info": "",
+        "x": 130,
+        "y": 1280,
+        "wires": []
+    },
+    {
+        "id": "fec82ed1e815b77e",
+        "type": "comment",
+        "z": "c640fc672af41d49",
+        "name": "Saving Changes",
+        "info": "",
+        "x": 140,
+        "y": 1640,
+        "wires": []
+    },
+    {
+        "id": "bafb59130dd3e250",
+        "type": "mqtt out",
+        "z": "c640fc672af41d49",
+        "name": "",
+        "topic": "planter01/light",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "e5c4971755ab6948",
+        "x": 800,
+        "y": 1220,
+        "wires": []
+    },
+    {
+        "id": "4878705de66d25b4",
+        "type": "ui-switch",
+        "z": "c640fc672af41d49",
+        "name": "",
+        "label": "Grow Light (ON/OFF)",
+        "group": "6e23d1d9b0d47c85",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "layout": "row-spread",
+        "clickableArea": "switch",
+        "onvalue": "on",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "off",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "x": 520,
+        "y": 1300,
+        "wires": [
+            [
+                "bafb59130dd3e250"
+            ]
+        ]
+    }
+]
